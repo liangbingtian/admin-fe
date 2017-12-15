@@ -163,3 +163,54 @@
     height: 75%;
     border:none;
 }
+
+.purple,
+.purple [class="box-header"],
+.purple.box,
+.slider.purple .ui-slider-range,
+.progress.purple .ui-progressbar-value,
+.sliderVertical.purple .ui-slider-range,
+.progressSlim.purple .ui-progressbar-value {
+    background: #8674A6 !important;
+    border-color: #8674A6 !important;
+    color: #fff;
+}
+
+.statbox {
+    height: 120px;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.statbox .number {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.statbox .title {
+    font-size: 16px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+.statbox .footer {
+    background: rgba(0,0,0,.1);
+    background-color: #19FFFFFF;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+}
+
+.statbox .footer:hover {
+    background: rgba(0,0,0,.2);
+}
+
+.statbox .footer a {
+    color: #fff;
+    text-decoration: none;
+}

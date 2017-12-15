@@ -83,7 +83,7 @@ var config = {
         // html 加载
         new HtmlWebpackPlugin({
             filename        : 'view/index.html',
-            title           : 'MMall 后台管理系统',
+            title           : 'PARKnSHOP ADMIN',
             template        : './src/index.html',
             favicon         : './favicon.ico',
             inject          : true,

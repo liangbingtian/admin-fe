@@ -63,20 +63,20 @@ const SideNav = React.createClass({
                                 </li>
                             </ul>
                         </li>
-                       {/*<li>*/}
-                            {/*<Link>*/}
-                                {/*<i className="fa fa-th-list fa-fw"></i>*/}
-                                {/*<span>Order</span>*/}
-                            {/*</Link>*/}
-                            {/*<ul className="nav nav-second-level collapse in">*/}
-                                {/*<li>*/}
-                                    {/*<Link to="/order/history" activeClassName="active">Sale History</Link>*/}
-                                {/*</li>*/}
-                                {/*<li>*/}
-                                    {/*<Link to="/order/detail/:orderNumber" activeClassName="active">Searching Order</Link>*/}
-                                {/*</li>*/}
-                            {/*</ul>*/}
-                        {/*</li>*/}
+                       <li>
+                            <Link>
+                                <i className="fa fa-th-list fa-fw"></i>
+                                <span>Order</span>
+                            </Link>
+                            <ul className="nav nav-second-level collapse in">
+                                <li>
+                                    <Link to="/order/history" activeClassName="active">Sale History</Link>
+                                </li>
+                                <li>
+                                    <Link to="/order/detail/:orderNumber" activeClassName="active">Searching Order</Link>
+                                </li>
+                            </ul>
+                        </li>
                         {/*<li>*/}
                             {/*<Link>*/}
                                 {/*<i className="fa fa-film fa-fw"></i>*/}

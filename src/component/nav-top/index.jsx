@@ -11,14 +11,17 @@ import ReactDOM from 'react-dom';
 
 import MMUtile  from 'util/mm.jsx';
 import User     from 'service/user.jsx';
+import Customer from 'service/customer.jsx';
 
+import './index.scss';
 const _mm       = new MMUtile();
 const _user     = new User();
-
+const _customer = new Customer();
 const TopNav = React.createClass({
     getInitialState() {
         return {
-            userName : ''
+            userName : '',
+            list: []
         };
     },
     componentDidMount(){
@@ -28,6 +31,11 @@ const TopNav = React.createClass({
                 userName : userInfo.username || ''
             });
         }
+        _customer.getMessage().then((res) => {
+            console.log(res);
+        }, err => {
+            console.log(err.msg);
+        })
     },
     // keyword change
     onKeywordChange(e){
@@ -59,27 +67,47 @@ const TopNav = React.createClass({
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
-                    <a className="navbar-brand" href="#/">BaiJia ADMIN</a>
+                    <a className="navbar-brand" href="#/">
+                        <img src="" alt="PARKnSHOP ADMIN"/>
+                    </a>
                 </div>
                 <ul className="nav navbar-top-links navbar-right">
                     <li>
-                        <a className="btn-apply" onClick={this.onMessage}>Message</a>
-
+                        <a className="btn glyphicon glyphicon-envelope" onClick={this.onMessage}></a>
+                            <span className="badge red">
+                                {this.state.list.length}</span>
                     </li>
-                    <li className="dropDown">
+                    <li>
                         {
                             this.state.userName ?
                             <span>Welcome，{this.state.userName}</span>
-                                : <a className="btn-login" onClick={this.onLogin}>LOGIN</a>
+                                : <a className="btn-login" onClick={this.onLogin}><b>Login</b></a>
                         }
                     </li>
-                    <li className="dropDown">
-                        {
-                            this.state.userName ?
-                            <a className="btn-lo gout" onClick={this.onLogout}>EXIT</a>
-                                : <div></div>
-                        }
-                    </li>
+                    {/*<li className="dropDown">*/}
+
+                        {/*{*/}
+                            {/*this.state.userName ?*/}
+                            {/*<a className="btn-logout" onClick={this.onLogout}>EXIT</a>*/}
+                                {/*: <div></div>*/}
+                        {/*}*/}
+                    {/*</li>*/}
+                    { this.state.userName ?
+                    <li className="dropdown">
+                        <a type="button" className="btn dropdown-toggle" data-toggle="dropdown">
+                            <i className="glyphicon glyphicon-user"></i>
+                            <b>jackhui</b>
+                            <span className="caret"></span>
+                        </a>
+                        <ul className="dropdown-menu">
+                            <li className="dropdown-menu-title" role="presentation">
+                                <a onClick={this.onLogout}>
+                                    <i className="glyphicon glyphicon-off"></i> <b>Logout</b>
+                                    </a>
+                            </li>
+                        </ul>
+                    </li>  : <div></div>
+                    }
                 </ul>
             </div>
         );

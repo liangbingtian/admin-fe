@@ -23,9 +23,14 @@ const Home = React.createClass({
         return (
             <div id="page-wrapper">
                 <PageTitle pageTitle="Home"/>
-                <div className="row">
-                    <div className="col-lg-3 col-md-6">
-                        Welcome
+                <div className="row-fluid">
+                    <div className="span3 statbox purple" onTablet="span6" onDesktop="span3">
+                        <div className="boxchart">5,6,7,2,0,4,2,4,8,2,3,3,2</div>
+                        <div className="number">854<i className="icon-arrow-up"></i></div>
+                        <div className="title">visits</div>
+                        <div className="footer">
+                            <a href="#"> read full report</a>
+                        </div>
                     </div>
                 </div>
             </div>

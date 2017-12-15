@@ -1,0 +1,65 @@
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  padding: 2px 5px;
+  text-shadow: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 9px;
+}
+.red {
+  background: #E25A59 !important;
+  border-color: #E25A59 !important;
+  color: #fff;
+}
+.dropdown{
+  position: relative;
+}
+li {
+  line-height: 20px;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.glyphicon-user {
+  padding: 3px;
+}
+.caret {
+  padding: 1px;
+}
+b {
+  padding-right: 5px;
+}
+.dropdown-menu {
+  border-top: 5px solid transparent;
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 130px;
+  max-width: 300px;
+  padding: 0px 0;
+  margin: 0px 0 0 0;
+  list-style: none;
+  text-shadow: none;
+  right: 0;
+  left: auto;
+  line-height: 20px;
+}
+.dropdown-menu-title {
+  color: #000000;
+  padding: 8px 0px;
+  position: relative;
+  font-family: "Arial no-serif";
+  text-align: center;
+}
+
+.navbar-right > li:hover .dropdown-menu {
+  display: block;
+}

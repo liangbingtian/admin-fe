@@ -8,18 +8,23 @@
 'use strict';
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import './index.scss'
 const PageTitle = React.createClass({
     componentDidMount(){
-        document.title = this.props.pageTitle || 'MMall Admin'
+        document.title = this.props.pageTitle || 'PARKnSHOP ADMIN'
     },
     render() {
         return (
             <div className="row">
-                <div className="col-lg-12">
-                    <h1 className="page-header">{this.props.pageTitle}</h1>
-                    {this.props.children}
-                </div>
+                <ul className="breadcrumb">
+                    <li>
+                        <i className="fa fa-home fa-fw"></i>
+                        <a href="#"><h5>Home</h5></a>
+                        <i className="icon-angle-right"></i>
+                    </li>
+                    <li><a href="#">{this.props.pageTitle}{this.props.children}</a></li>
+                    <hr/>
+                </ul>
             </div>
         );
     }
