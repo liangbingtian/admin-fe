@@ -77,17 +77,20 @@ const SideNav = React.createClass({
                                 </li>
                             </ul>
                         </li>
-                        {/*<li>*/}
-                            {/*<Link>*/}
-                                {/*<i className="fa fa-film fa-fw"></i>*/}
-                                {/*<span>Advertisement</span>*/}
-                            {/*</Link>*/}
-                            {/*<ul className="nav nav-second-level collapse in">*/}
-                                {/*<li>*/}
-                                    {/*<Link to="/ad" activeClassName="active">Management</Link>*/}
-                                {/*</li>*/}
-                            {/*</ul>*/}
-                        {/*</li> */}
+                        <li>
+                            <Link>
+                                <i className="fa fa-film fa-fw"></i>
+                                <span>Advertisement</span>
+                            </Link>
+                            <ul className="nav nav-second-level collapse in">
+                                <li>
+                                    <Link to="/ad/index" activeClassName="active">Ad management</Link>
+                                </li>
+                                <li>
+                                    <Link to="/ad/commission" activeClassName="active">Commission</Link>
+                                </li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </div>

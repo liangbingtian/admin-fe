@@ -30,6 +30,7 @@ import OrderList            from 'page/order/index.jsx';
 import OrderHistory         from 'page/order/history.jsx'
 import OrderDetail          from 'page/order/detail.jsx';
 import Advertisement        from 'page/advertisement/index.jsx';
+import Commission           from 'page/advertisement/commission/index.jsx'
 import Login                from 'page/login/index.jsx';
 import ErrorPage            from 'page/error/index.jsx';
 import BlankPage            from 'page/blank/index.jsx';
@@ -87,10 +88,11 @@ render(
                 <IndexRedirect to="index" />
                 <Route path="index" component={Message} />
             </Route>
-            {/* advertisment */}
+            {/* advertisement */}
             <Route path="ad" component={Layout}>
                  <IndexRedirect to="index" />
             <Route path="index" component={Advertisement} />
+            <Route path="commission" component={Commission}/>
             </Route>
             {/* without layout */} 
             <Route path="login" component={Login}/>

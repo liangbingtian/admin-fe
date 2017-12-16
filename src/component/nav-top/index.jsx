@@ -68,7 +68,7 @@ const TopNav = React.createClass({
                         <span className="icon-bar"></span>
                     </button>
                     <a className="navbar-brand" href="#/">
-                        <img src="" alt="PARKnSHOP ADMIN"/>
+                        <img src="./../../../parknshopadmin.jpg" alt="PARKnSHOP ADMIN"/>
                     </a>
                 </div>
                 <ul className="nav navbar-top-links navbar-right">

@@ -26,7 +26,7 @@ var config = {
     // path && publickPath
     output: {
         path        : __dirname + '/dist/',
-        publicPath  : WEBPACK_ENV === 'online' ? 'http://localhost:8088/dist/' : '/dist/',
+        publicPath  : WEBPACK_ENV === 'online' ? 'http://localhost:8086/dist/' : '/dist/',
         filename    : 'js/[name].js'
     },
     resolve: {

@@ -164,23 +164,11 @@
     border:none;
 }
 
-.purple,
-.purple [class="box-header"],
-.purple.box,
-.slider.purple .ui-slider-range,
-.progress.purple .ui-progressbar-value,
-.sliderVertical.purple .ui-slider-range,
-.progressSlim.purple .ui-progressbar-value {
-    background: #8674A6 !important;
-    border-color: #8674A6 !important;
-    color: #fff;
-}
-
 .statbox {
     height: 120px;
     padding: 10px;
     position: relative;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 .statbox .number {
@@ -191,6 +179,7 @@
 }
 
 .statbox .title {
+    padding-top: 5px;
     font-size: 16px;
     position: absolute;
     top: 50px;
@@ -199,7 +188,7 @@
 
 .statbox .footer {
     background: rgba(0,0,0,.1);
-    background-color: #19FFFFFF;
+    background-color: #00FFFF;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -213,4 +202,87 @@
 .statbox .footer a {
     color: #fff;
     text-decoration: none;
+}
+
+.span3 {
+  width:23.076923076923077%;
+  float: left;
+  margin-right: 22px;
+}
+.boxchart i{
+  height: 120px;
+  width: 120px;
+  font-size: 50px;
+  color: #fff;
+}
+
+.purple,
+.purple [class="box-header"],
+.purple.box,
+.slider.purple .ui-slider-range,
+.progress.purple .ui-progressbar-value,
+.sliderVertical.purple .ui-slider-range,
+.progressSlim.purple .ui-progressbar-value {
+  background: #8674A6 !important;
+  border-color: #8674A6 !important;
+  color: #fff;
+}
+
+.blue,
+.blue [class="box-header"],
+.blue.box,
+.slider.blue .ui-slider-range,
+.progress.blue .ui-progressbar-value,
+.sliderVertical.blue .ui-slider-range,
+.progressSlim.blue .ui-progressbar-value,
+.label-info,
+.badge-info {
+  background: #578EBE !important;
+  border-color: #578EBE !important;
+  color: #fff;
+}
+
+.yellow,
+.yellow [class="box-header"],
+.yellow.box,
+.slider.yellow .ui-slider-range,
+.progress.yellow .ui-progressbar-value,
+.sliderVertical.yellow .ui-slider-range,
+.progressSlim.yellow .ui-progressbar-value,
+.label-warning,
+.badge-warning {
+  background: #DEB948 !important;
+  border-color: #DEB948 !important;
+  color: #fff;
+}
+
+.green,
+.green [class="box-header"],
+.green.box,
+.slider.green .ui-slider-range,
+.progress.green .ui-progressbar-value,
+.sliderVertical.green .ui-slider-range,
+.progressSlim.green .ui-progressbar-value,
+.label-success,
+.badge-success {
+  background: #43B5AD !important;
+  border-color: #43B5AD !important;
+  color: #fff;
+}
+
+.badge-success {
+  background-color: #27C24C;
+  color: #DFF5E4;
+}
+.badge-warning {
+  background-color: #FAD733;
+  color: #FDF8E5;
+}
+.badge-info {
+  background-color: #23B7E5;
+  color: #E3F6FC;
+}
+.badge-danger {
+  background-color: #F05050;
+  color: #FAE6E6;
 }

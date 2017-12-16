@@ -1,0 +1,19 @@
+.title {
+  display: flex;
+  justify-content: center;
+}
+.currentrate {
+  font-size: 20px;
+  color: #FF0000;
+}
+.rateInput {
+  height:34px;
+}
+.submit {
+  display: flex;
+}
+.input-warning {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
