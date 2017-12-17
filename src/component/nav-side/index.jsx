@@ -72,9 +72,6 @@ const SideNav = React.createClass({
                                 <li>
                                     <Link to="/order/history" activeClassName="active">Sale History</Link>
                                 </li>
-                                <li>
-                                    <Link to="/order/detail/:orderNumber" activeClassName="active">Searching Order</Link>
-                                </li>
                             </ul>
                         </li>
                         <li>
